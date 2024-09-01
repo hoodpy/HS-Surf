@@ -2,6 +2,10 @@
 
 本项目的模型文件是 network.NetWork, 该模型会传入 mc_base.MCBase_NeRF 中进行训练和渲染测试.
 
+![figure2](https://github.com/hoodpy/HS-Surf/blob/main/pictures/figure3.png)
+
+![figure3](https://github.com/hoodpy/HS-Surf/blob/main/pictures/figure4.png)
+
 该项目一共渲染六个场景, 分别是 data(Transamerica), google(56 Leonard), building, rubble, residence, campus, 它们的配置文件是config_xxx.py
 
 ****模型训练分为两个阶段，注意 MCBase_NeRF 的参数 trainable 指定当前是训练集还是测试集：
