@@ -2,6 +2,7 @@
 HS-Surf: A Novel High-Frequency Surface Shell Radiance Field to Improve Large-Scale Scene Rendering
 
 本项目的模型文件是 network.NetWork, 该模型会传入 mc_base.MCBase_NeRF 中进行训练和渲染测试.
+
 该项目一共渲染六个场景, 分别是 data(Transamerica), google(56 Leonard), building, rubble, residence, campus, 它们的配置文件是config_xxx.py
 
 ****模型训练分为两个阶段，注意 MCBase_NeRF 的参数 trainable 指定当前是训练集还是测试集：
@@ -42,6 +43,9 @@ mcbase_nerf.rende_test()
 
 
 ****我们提供了模型，训练和测试的全套代码， 并且提供了六个场景上已经训练好的checkpoint，方便其他研究者进行测试和比较。
+
 ****因为所有的checkpoint都是在3090GPU上训练得到，所以，建议它们的测试环境最好也是3090，否则可能会出现一些奇怪的现象。
+
 ****Building场景中已经发现的一种现象是3090上得到的checkpoint在3080上会生成奇怪的白色噪点。
+
 ****如果只有其它型号的GPU，可以重新跑一遍训练过程，这可能会消耗较长的时间。
