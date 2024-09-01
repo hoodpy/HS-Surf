@@ -1,5 +1,4 @@
-# HS-Surf
-HS-Surf: A Novel High-Frequency Surface Shell Radiance Field to Improve Large-Scale Scene Rendering
+# HS-Surf: A Novel High-Frequency Surface Shell Radiance Field to Improve Large-Scale Scene Rendering
 
 本项目的模型文件是 network.NetWork, 该模型会传入 mc_base.MCBase_NeRF 中进行训练和渲染测试.
 
